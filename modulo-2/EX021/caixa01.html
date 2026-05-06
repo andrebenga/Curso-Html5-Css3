@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            /* Eu posso transformar um elemento de box-level padrão para inline com a propriedade/valor abaixo; */
+            /* display: inline; */
+            /* Com esta propriedade/valor ele vira um elemento inline mas com algumas propriedades de bloco, como configuração do tamanho, por exemplo */
+            /* display: inline-block; */
+
+            background-color: lightgray;
+            height: 300px;
+            width: 300px;
+           
+            /* border-width: 10px;            
+            border-style: solid;
+            border-color: darkslategray; */
+
+            /* Comando Shorthand para as três propriedades e seus valores do border */
+            border: 10px solid darkslategray;
+
+            /* padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px; */
+
+            /* Comando Shorthand para as quatro propriedades e seus valores do padding
+            caso as quatro medidas sejam iguais (top, right, bottom, left),
+            basta colocar apenas um valor  
+
+            Para o padding também posso fazer com dois valores: 10px 20px, por exemplo
+            Isso representa as medidas para o vertical (top, bottom) e o horizontal (right, left) */
+            padding: 10px;
+
+            /* Comando para centralizar a caixa no meio da tela
+            Ele subscreve os comandos das demais margens  */
+            /* margin: auto; */
+
+            /* margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 40px;
+            margin-left: 20px; */
+
+            /* O mesmo conceito do shorthand para o padding vale para o margin
+            Com a diferença que eu posso centralizar pelo valor auto as medidas da vertical ou da horizontal. Ex.: margin: 10px auto 20px; */
+            margin: 10px 20px 40px;
+
+            /* outline-width: 5px;
+            outline-style: dashed;
+            outline-color: salmon; */
+
+            /* Comando Shorthand para as três propriedades e seus valores do outline */
+            outline: 5px dashed salmon;
+
+        }
+
+        a {
+            border-width: 10px;
+            border-style: solid;
+            border-color: red;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;            
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">link são exemplos de inline-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

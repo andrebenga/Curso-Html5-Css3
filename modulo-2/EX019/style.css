@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/* 
+    Tudo que em HTML for id
+    No CSS é # (id apenas para um elemento)
+
+    E tudo o que no HTML for class
+    No CSS é . (classe para múltiplos elementos)
+
+    Já os dois pontos : no CSS se trata de uma pseudoclasse
+    que configura a formatação para um estado do elemento. 
+    Exemplo: se foi pressionado, se o mouse passou por cima etc
+    
+*/
+
+body {
+    background-color: rgb(170, 237, 170);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: rgb(83, 65, 247)
+}
+
+h1#principal {
+    text-align: center;
+    background-color: rgb(65, 247, 65);
+    color: white;
+}
+
+h2 {
+    color: rgb(24, 221, 24);
+}
+
+.basico {
+    color: rgb(24, 221, 24);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(169, 221, 24);
+}
+
+.avancado {
+    color: rgb(221, 100, 24);
+}
+
+.destaque {
+    background-color: rgba(194, 194, 29, 0.591);
+}
